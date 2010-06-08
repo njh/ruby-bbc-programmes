@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf      = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs     = "http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf     = "http://xmlns.com/foaf/0.1/"
+         xmlns:po       = "http://purl.org/ontology/po/"
+         xmlns:mo       = "http://purl.org/ontology/mo/"
+         xmlns:skos     = "http://www.w3.org/2008/05/skos#"
+         xmlns:time     = "http://www.w3.org/2006/time#"
+         xmlns:dc       = "http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms  = "http://purl.org/dc/terms/"
+         xmlns:wgs84_pos= "http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:timeline = "http://purl.org/NET/c4dm/timeline.owl#"
+         xmlns:event    = "http://purl.org/NET/c4dm/event.owl#">
+
+<rdf:Description rdf:about="/programmes/b005sv69.rdf">
+  <rdfs:label>Description of a programme version of The Target</rdfs:label>
+  <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-23T02:04:49Z</dcterms:created>
+  <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-23T02:04:49Z</dcterms:modified>
+  <foaf:primaryTopic rdf:resource="/programmes/b005sv69#programme"/>
+</rdf:Description>
+
+<po:Version rdf:about="/programmes/b005sv69#programme">
+
+  <rdfs:label>A version of The Target</rdfs:label>
+  <po:aspect_ratio>16:9</po:aspect_ratio>
+  <po:sound_format>Stereo</po:sound_format>
+  <po:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3600</po:duration>
+  <po:time>
+    <timeline:Interval>
+      <rdfs:label>Time interval for a version of The Target</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+      <timeline:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT3600S</timeline:duration>
+    </timeline:Interval>
+  </po:time>
+
+</po:Version>
+
+<po:Episode rdf:about="/programmes/b00jnwnv#programme">
+  <rdfs:label>The Target</rdfs:label>
+  <po:version rdf:resource="/programmes/b005sv69#programme" />
+</po:Episode>
+
+<timeline:TimeLine rdf:about="/programmes/b005sv69#timeline">
+  <rdfs:label>Timeline of a version of The Target</rdfs:label>
+</timeline:TimeLine>
+
+<po:FirstBroadcast>
+  <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
+  <event:time>
+<timeline:Interval>
+      <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
+      <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
+    </timeline:Interval>
+  </event:time>
+  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
+</po:FirstBroadcast>
+<po:FirstBroadcast>
+  <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
+  <event:time>
+<timeline:Interval>
+      <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
+      <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
+    </timeline:Interval>
+  </event:time>
+  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
+</po:FirstBroadcast>
+<po:FirstBroadcast>
+  <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
+  <event:time>
+<timeline:Interval>
+      <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
+      <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
+    </timeline:Interval>
+  </event:time>
+  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
+</po:FirstBroadcast>
+<po:FirstBroadcast>
+  <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
+  <event:time>
+<timeline:Interval>
+      <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
+      <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
+    </timeline:Interval>
+  </event:time>
+  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
+</po:FirstBroadcast>
+<po:FirstBroadcast>
+  <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
+  <event:time>
+<timeline:Interval>
+      <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
+      <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
+    </timeline:Interval>
+  </event:time>
+  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
+</po:FirstBroadcast>
+<po:FirstBroadcast>
+  <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
+  <event:time>
+<timeline:Interval>
+      <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
+      <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
+    </timeline:Interval>
+  </event:time>
+  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
+</po:FirstBroadcast>
+
+<po:Segment rdf:about="/programmes/p002y5hl#segment">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
+  <rdfs:label>Tom Waits - Way Down in the Hole</rdfs:label>
+  <po:time>
+  <timeline:Interval rdf:about="/programmes/b005sv69#p002y5hm">
+  
+      <po:position>1</po:position>
+      <rdfs:label>Soundtrack</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+    </timeline:Interval>
+  </po:time>
+</po:Segment>
+<po:Segment rdf:about="/programmes/p002y6r5#segment">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
+  <rdfs:label>Jay-Z - Izzo (H.O.V.A)</rdfs:label>
+  <po:time>
+  <timeline:Interval rdf:about="/programmes/b005sv69#p002y6r6">
+  
+      <po:position>2</po:position>
+      <rdfs:label>Time interval for Jay-Z - Izzo (H.O.V.A)</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+    </timeline:Interval>
+  </po:time>
+</po:Segment>
+<po:Segment rdf:about="/programmes/p002y5hs#segment">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
+  <rdfs:label>Bill Withers - Use Me</rdfs:label>
+  <po:time>
+  <timeline:Interval rdf:about="/programmes/b005sv69#p002y5ht">
+  
+      <po:position>3</po:position>
+      <rdfs:label>Time interval for Bill Withers - Use Me</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+    </timeline:Interval>
+  </po:time>
+</po:Segment>
+<po:Segment rdf:about="/programmes/p002y5j4#segment">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
+  <rdfs:label>2Pac - Death Around the Corner</rdfs:label>
+  <po:time>
+  <timeline:Interval rdf:about="/programmes/b005sv69#p002y5j5">
+  
+      <po:position>4</po:position>
+      <rdfs:label>Time interval for 2Pac - Death Around the Corner</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+    </timeline:Interval>
+  </po:time>
+</po:Segment>
+<po:Segment rdf:about="/programmes/p002y5yg#segment">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
+  <rdfs:label>Tompall Glaser &amp; The Glaser Brothers - Streets of Baltimore</rdfs:label>
+  <po:time>
+  <timeline:Interval rdf:about="/programmes/b005sv69#p002y5yq">
+  
+      <po:position>5</po:position>
+      <rdfs:label>Time interval for Tompall Glaser &amp; The Glaser Brothers - Streets of Baltimore</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+    </timeline:Interval>
+  </po:time>
+</po:Segment>
+<po:Segment rdf:about="/programmes/p002y5pg#segment">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
+  <rdfs:label>Grace Jones - Pull Up to the Bumper</rdfs:label>
+  <po:time>
+  <timeline:Interval rdf:about="/programmes/b005sv69#p002y5ph">
+  
+      <po:position>6</po:position>
+      <rdfs:label>Time interval for Grace Jones - Pull Up to the Bumper</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+    </timeline:Interval>
+  </po:time>
+</po:Segment>
+<po:Segment rdf:about="/programmes/p002y6k7#segment">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
+  <rdfs:label>Fr&#233;d&#233;ric Chopin - Etude op.3 in E Major</rdfs:label>
+  <po:time>
+  <timeline:Interval rdf:about="/programmes/b005sv69#p002y6k8">
+  
+      <po:position>7</po:position>
+      <rdfs:label>Time interval for Fr&#233;d&#233;ric Chopin - Etude op.3 in E Major</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+    </timeline:Interval>
+  </po:time>
+</po:Segment>
+<po:Segment rdf:about="/programmes/p002y6kh#segment">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
+  <rdfs:label>Blake Leyh - The Fall</rdfs:label>
+  <po:time>
+  <timeline:Interval rdf:about="/programmes/b005sv69#p002y6kj">
+  
+      <po:position>8</po:position>
+      <rdfs:label>Time interval for Blake Leyh - The Fall</rdfs:label>
+      <timeline:timeline rdf:resource="/programmes/b005sv69#timeline"/>
+    </timeline:Interval>
+  </po:time>
+</po:Segment>
+
+
+</rdf:RDF>

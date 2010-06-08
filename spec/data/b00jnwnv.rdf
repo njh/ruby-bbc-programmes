@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf      = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs     = "http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf     = "http://xmlns.com/foaf/0.1/"
+         xmlns:po       = "http://purl.org/ontology/po/"
+         xmlns:mo       = "http://purl.org/ontology/mo/"
+         xmlns:skos     = "http://www.w3.org/2008/05/skos#"
+         xmlns:time     = "http://www.w3.org/2006/time#"
+         xmlns:dc       = "http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms  = "http://purl.org/dc/terms/"
+         xmlns:wgs84_pos= "http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:timeline = "http://purl.org/NET/c4dm/timeline.owl#"
+         xmlns:event    = "http://purl.org/NET/c4dm/event.owl#">
+
+<rdf:Description rdf:about="/programmes/b00jnwnv.rdf">
+  <rdfs:label>Description of the episode The Target</rdfs:label>
+  <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-23T02:04:29Z</dcterms:created>
+  <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-23T02:04:29Z</dcterms:modified>
+  <foaf:primaryTopic rdf:resource="/programmes/b00jnwnv#programme"/>
+</rdf:Description>
+
+<po:Episode rdf:about="/programmes/b00jnwnv#programme">
+
+  <dc:title>The Target</dc:title>
+  <po:short_synopsis>During the murder trial of a mid-level dealer, the star witness recants her testimony.</po:short_synopsis>
+  <po:medium_synopsis>Critically acclaimed crime drama series. During the trial of a mid-level dealer accused of murder, the prosecution&#39;s star witness recants her testimony.</po:medium_synopsis>
+  <po:long_synopsis>Critically acclaimed drama series about drug dealers in West Baltimore and the police investigating them. 
+
+During the trial of D&#39;Angelo Barksdale, a mid-level dealer accused of murder, the prosecution&#39;s star witness recants her testimony. After the trial, Detective James McNulty explains to Judge Phelan how he suspects the Barksdale crew for a slew of related murders.</po:long_synopsis>
+
+  
+
+
+  <po:masterbrand rdf:resource="/bbctwo#service"/>
+
+  <po:position rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</po:position>
+
+  <po:genre rdf:resource="/programmes/genres/drama/crime#genre" />
+
+
+
+
+
+  <po:version rdf:resource="/programmes/b005sv69#programme" />
+
+
+</po:Episode>
+
+<po:Series rdf:about="/programmes/b00jnwm0#programme">
+  <po:episode rdf:resource="/programmes/b00jnwnv#programme"/>
+</po:Series>
+
+
+
+<po:Brand rdf:about="/programmes/b00jnwlc#programme">
+  <po:episode rdf:resource="/programmes/b00jnwnv#programme"/>
+</po:Brand>
+
+
+</rdf:RDF>
