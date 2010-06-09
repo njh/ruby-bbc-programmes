@@ -7,6 +7,7 @@ module BBC::Programmes
   
     base_uri BBC::Programmes::BASE_URI
     default_vocabulary RDF::PO
+    type RDF::PO.Programme
     
     property :title, :predicate => DC11.title, :type => String
     property :short_synopsis, :type => String
@@ -31,6 +32,10 @@ module BBC::Programmes
     
     def self.fragment_id
       "programme"
+    end
+    
+    def pid
+      /(\w+)$/.match(subject.path)[0]
     end
     
     def load!
