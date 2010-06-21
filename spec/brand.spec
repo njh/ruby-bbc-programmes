@@ -1,20 +1,15 @@
 require File.dirname(__FILE__) + "/spec_helper.rb"
 
 describe BBC::Programmes::Brand do
+  before :each do
+    @repo = RDF::Repository.new
+    Spira.add_repository(:default, @repo)
+  end
 
-  context "getting a Brand from the repository" do
+  context "fetching a Brand from the website" do
     before :each do
-      @repo = RDF::Repository.new
-      Spira.add_repository(:default, @repo)
-      @repo.load(
-        fixture('b00jnwlc.rdf'),
-        :base_uri => 'http://www.bbc.co.uk/programmes/b00jnwlc.rdf'
-      )
-      @brand = BBC::Programmes::Brand.for('b00jnwlc')
-    end
-
-    it "should return an object of type BBC::Programmes::Brand" do
-      @brand.class.should == BBC::Programmes::Brand
+      mock_http('www.bbc.co.uk', 'b00jnwlc.rdf')
+      @brand = BBC::Programmes::Brand.fetch('b00jnwlc')
     end
 
     it "should have a type URI defined" do
@@ -23,6 +18,10 @@ describe BBC::Programmes::Brand do
 
     it "should have a correct URI" do
       @brand.subject.should == RDF::URI('http://www.bbc.co.uk/programmes/b00jnwlc#programme')
+    end
+
+    it "should have a programme indentifier" do
+      @brand.pid.should == 'b00jnwlc'
     end
 
     it "should have the title 'The Wire'" do
@@ -45,6 +44,10 @@ describe BBC::Programmes::Brand do
       @brand.image.should == RDF::URI('http://www.bbc.co.uk/iplayer/images/progbrand/b00jnwlc_512_288.jpg')
     end
 
+    it "should have a master brand" do
+      @brand.masterbrand.should == RDF::URI('http://www.bbc.co.uk/bbctwo#service')
+    end
+
     it "should have five series objects" do
       @brand.series.count.should == 5
     end
@@ -53,16 +56,19 @@ describe BBC::Programmes::Brand do
       @brand.series.first.class.should == BBC::Programmes::Series
     end
   end
-  
-#   context "loading a Brand" do
-#     before :each do
-#       @brand = BBC::Programmes::Brand.for('b00jnwlc')
-#       @brand.load!
-#     end
-# 
-#     it "should set the title for the loaded Brand" do
-#       @brand.title.should == 'The Wire'
-#     end
-#   end
+
+  context "getting a Brand from the local repository" do
+    before :each do
+      @repo.load(
+        fixture('b00jnwlc.rdf'),
+        :base_uri => 'http://www.bbc.co.uk/programmes/b00jnwlc.rdf'
+      )
+      @brand = BBC::Programmes::Brand.for('b00jnwlc')
+    end
+
+    it "should have the title 'The Wire'" do
+      @brand.title.should == 'The Wire'
+    end
+  end
 
 end

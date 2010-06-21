@@ -1,6 +1,10 @@
 require File.dirname(__FILE__) + "/spec_helper.rb"
 
 describe BBC::Programmes do
+  before :each do
+    @repo = RDF::Repository.new
+    Spira.add_repository(:default, @repo)
+  end
 
   context "performing an HTTP get for a URI" do
     before :each do
@@ -25,8 +29,7 @@ describe BBC::Programmes do
       @graph.should have_triple([@uri, RDF.type, RDF::PO.Brand])
     end
   end
-  
-  
+
   context "searching for a keyword" do
     before :each do
       mock_http('www.bbc.co.uk', 'the_wire.rdf')
@@ -45,4 +48,24 @@ describe BBC::Programmes do
       @programmes.first.class.should == BBC::Programmes::Programme
     end
   end
+
+  context "fetching an episode" do
+    before :each do
+      mock_http('www.bbc.co.uk', 'b00jnwnv.rdf')
+      @episode = BBC::Programmes.fetch('b00jnwnv#programme')
+    end
+
+    it "should have a type URI defined" do
+      @episode.type.should == RDF::URI('http://purl.org/ontology/po/Episode')
+    end
+
+    it "should have a correct URI" do
+      @episode.subject.should == RDF::URI('http://www.bbc.co.uk/programmes/b00jnwnv#programme')
+    end
+
+    it "should have the title 'The Target'" do
+      @episode.title.should == 'The Target'
+    end
+  end
+
 end
