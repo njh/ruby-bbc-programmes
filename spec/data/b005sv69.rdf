@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:rdf      = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs     = "http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl      = "http://www.w3.org/2002/07/owl#"
          xmlns:foaf     = "http://xmlns.com/foaf/0.1/"
          xmlns:po       = "http://purl.org/ontology/po/"
          xmlns:mo       = "http://purl.org/ontology/mo/"
@@ -25,6 +26,7 @@
   <po:aspect_ratio>16:9</po:aspect_ratio>
   <po:sound_format>Stereo</po:sound_format>
   <po:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3600</po:duration>
+  <po:pid>b005sv69</po:pid>
   <po:time>
     <timeline:Interval>
       <rdfs:label>Time interval for a version of The Target</rdfs:label>
@@ -32,6 +34,253 @@
       <timeline:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT3600S</timeline:duration>
     </timeline:Interval>
   </po:time>
+
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Det William Bunk</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Wendell Pierce</rdfs:label>
+          <foaf:givenName>Wendell</foaf:givenName>
+          <foaf:familyName>Pierce</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Moreland Bubbles</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Andre Royo</rdfs:label>
+          <foaf:givenName>Andre</foaf:givenName>
+          <foaf:familyName>Royo</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Lt Cedric Daniels</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Lance Reddick</rdfs:label>
+          <foaf:givenName>Lance</foaf:givenName>
+          <foaf:familyName>Reddick</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Det James &#39;Jimmy&#39; McNulty</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Dominic West</rdfs:label>
+          <foaf:givenName>Dominic</foaf:givenName>
+          <foaf:familyName>West</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Avon Barksdale</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Wood Harris</rdfs:label>
+          <foaf:givenName>Wood</foaf:givenName>
+          <foaf:familyName>Harris</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Asst State Attorney Rhonda Pearlman</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Deirdre Lovejoy</rdfs:label>
+          <foaf:givenName>Deirdre</foaf:givenName>
+          <foaf:familyName>Lovejoy</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Russell &#39;Stringer&#39; Bell</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Idris Elba</rdfs:label>
+          <foaf:givenName>Idris</foaf:givenName>
+          <foaf:familyName>Elba</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Det Shakima &#39;Kima&#39; Greggs</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Sonja Sohn</rdfs:label>
+          <foaf:givenName>Sonja</foaf:givenName>
+          <foaf:familyName>Sohn</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Maj William A Rawls</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>John Doman</rdfs:label>
+          <foaf:givenName>John</foaf:givenName>
+          <foaf:familyName>Doman</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>D&#39;Angelo Barksdale</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Larry Gilliard Jr.</rdfs:label>
+          <foaf:givenName>Larry</foaf:givenName>
+          <foaf:familyName>Gilliard Jr.</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Deputy Comm Ervin H Burrell</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Frankie Faison</rdfs:label>
+          <foaf:givenName>Frankie</foaf:givenName>
+          <foaf:familyName>Faison</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Character>
+          <foaf:name>Det Ellis Carver</foaf:name>
+        </po:Character>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Seth Gilliam</rdfs:label>
+          <foaf:givenName>Seth</foaf:givenName>
+          <foaf:familyName>Gilliam</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Role>
+          <rdfs:label>Director</rdfs:label>
+          <dc:title>Director</dc:title>
+          <dc:description>A supervisor; generally refers to the person responsible for all audience-visible components of a program, film, or show, whereas the producer is responsible for the financial and other behind-the-scenes aspects. A director&#39;s duties might also include casting, script editing, shot selection, shot composition, and editing</dc:description>
+        </po:Role>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Clark Johnson</rdfs:label>
+          <foaf:givenName>Clark</foaf:givenName>
+          <foaf:familyName>Johnson</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Role>
+          <rdfs:label>Writer</rdfs:label>
+          <dc:title>Writer</dc:title>
+          <dc:description>A person who writes scripts for plays or movies or broadcast dramas</dc:description>
+        </po:Role>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>David Simon</rdfs:label>
+          <foaf:givenName>David</foaf:givenName>
+          <foaf:familyName>Simon</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
+  <po:credit>
+    <po:Credit>
+      <po:role>
+        <po:Role>
+          <rdfs:label>Writer</rdfs:label>
+          <dc:title>Writer</dc:title>
+          <dc:description>A person who writes scripts for plays or movies or broadcast dramas</dc:description>
+        </po:Role>
+      </po:role>
+      <po:participant>
+        <po:Alias>
+          <rdfs:label>Ed Burns</rdfs:label>
+          <foaf:givenName>Ed</foaf:givenName>
+          <foaf:familyName>Burns</foaf:familyName>
+        </po:Alias>
+      </po:participant>
+    </po:Credit>
+  </po:credit>
 
 </po:Version>
 
@@ -44,72 +293,115 @@
   <rdfs:label>Timeline of a version of The Target</rdfs:label>
 </timeline:TimeLine>
 
-<po:FirstBroadcast>
+<po:Broadcast rdf:about="/programmes/b005sv69#p002jmsj">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/FirstBroadcast"/>
+  <po:pid>p002jmsj</po:pid>
   <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
   <event:time>
-<timeline:Interval>
+    <timeline:Interval>
       <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
       <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
     </timeline:Interval>
   </event:time>
-  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_on>
+    <po:Service rdf:about="/services/bbctwo/ni_analogue#service">
+       <rdfs:label>Northern Ireland (Analogue)</rdfs:label>
+       <po:parent_service rdf:resource="/services/bbctwo#service"/>
+     </po:Service>
+  </po:broadcast_on>
   <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
-</po:FirstBroadcast>
-<po:FirstBroadcast>
+</po:Broadcast>
+<po:Broadcast rdf:about="/programmes/b005sv69#p002jn5y">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/FirstBroadcast"/>
+  <po:pid>p002jn5y</po:pid>
   <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
   <event:time>
-<timeline:Interval>
+    <timeline:Interval>
       <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
       <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
     </timeline:Interval>
   </event:time>
-  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_on>
+    <po:Service rdf:about="/services/bbctwo/wales_analogue#service">
+       <rdfs:label>Wales (Analogue)</rdfs:label>
+       <po:parent_service rdf:resource="/services/bbctwo#service"/>
+     </po:Service>
+  </po:broadcast_on>
   <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
-</po:FirstBroadcast>
-<po:FirstBroadcast>
+</po:Broadcast>
+<po:Broadcast rdf:about="/programmes/b005sv69#p002jq47">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/FirstBroadcast"/>
+  <po:pid>p002jq47</po:pid>
   <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
   <event:time>
-<timeline:Interval>
+    <timeline:Interval>
       <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
       <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
     </timeline:Interval>
   </event:time>
-  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_on>
+    <po:Service rdf:about="/services/bbctwo/scotland#service">
+       <rdfs:label>Scotland</rdfs:label>
+       <po:parent_service rdf:resource="/services/bbctwo#service"/>
+     </po:Service>
+  </po:broadcast_on>
   <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
-</po:FirstBroadcast>
-<po:FirstBroadcast>
+</po:Broadcast>
+<po:Broadcast rdf:about="/programmes/b005sv69#p002jq5w">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/FirstBroadcast"/>
+  <po:pid>p002jq5w</po:pid>
   <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
   <event:time>
-<timeline:Interval>
+    <timeline:Interval>
       <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
       <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
     </timeline:Interval>
   </event:time>
-  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_on>
+    <po:Service rdf:about="/services/bbctwo/ni#service">
+       <rdfs:label>Northern Ireland</rdfs:label>
+       <po:parent_service rdf:resource="/services/bbctwo#service"/>
+     </po:Service>
+  </po:broadcast_on>
   <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
-</po:FirstBroadcast>
-<po:FirstBroadcast>
+</po:Broadcast>
+<po:Broadcast rdf:about="/programmes/b005sv69#p002jq7j">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/FirstBroadcast"/>
+  <po:pid>p002jq7j</po:pid>
   <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
   <event:time>
-<timeline:Interval>
+    <timeline:Interval>
       <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
       <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
     </timeline:Interval>
   </event:time>
-  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_on>
+    <po:Service rdf:about="/services/bbctwo/wales#service">
+       <rdfs:label>Wales</rdfs:label>
+       <po:parent_service rdf:resource="/services/bbctwo#service"/>
+     </po:Service>
+  </po:broadcast_on>
   <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
-</po:FirstBroadcast>
-<po:FirstBroadcast>
+</po:Broadcast>
+<po:Broadcast rdf:about="/programmes/b005sv69#p002jq89">
+  <rdf:type rdf:resource="http://purl.org/ontology/po/FirstBroadcast"/>
+  <po:pid>p002jq89</po:pid>
   <po:schedule_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-30</po:schedule_date>
   <event:time>
-<timeline:Interval>
+    <timeline:Interval>
       <timeline:start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-30T23:20:00+01:00</timeline:start>
       <timeline:end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-03-31T00:20:00+01:00</timeline:end>
     </timeline:Interval>
   </event:time>
-  <po:broadcast_on rdf:resource="/bbctwo#service" />
+  <po:broadcast_on>
+    <po:Service rdf:about="/services/bbctwo/england#service">
+       <rdfs:label>England</rdfs:label>
+       <po:parent_service rdf:resource="/services/bbctwo#service"/>
+     </po:Service>
+  </po:broadcast_on>
   <po:broadcast_of rdf:resource="/programmes/b005sv69#programme" />
-</po:FirstBroadcast>
+</po:Broadcast>
+
 
 <po:Segment rdf:about="/programmes/p002y5hl#segment">
   <rdf:type rdf:resource="http://purl.org/ontology/po/MusicSegment"/>
@@ -207,6 +499,9 @@
     </timeline:Interval>
   </po:time>
 </po:Segment>
+
+
+
 
 
 </rdf:RDF>

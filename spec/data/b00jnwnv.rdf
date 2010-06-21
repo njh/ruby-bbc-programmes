@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:rdf      = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs     = "http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl      = "http://www.w3.org/2002/07/owl#"
          xmlns:foaf     = "http://xmlns.com/foaf/0.1/"
          xmlns:po       = "http://purl.org/ontology/po/"
          xmlns:mo       = "http://purl.org/ontology/mo/"
@@ -21,6 +22,7 @@
 
 <po:Episode rdf:about="/programmes/b00jnwnv#programme">
 
+  <po:pid>b00jnwnv</po:pid>
   <dc:title>The Target</dc:title>
   <po:short_synopsis>During the murder trial of a mid-level dealer, the star witness recants her testimony.</po:short_synopsis>
   <po:medium_synopsis>Critically acclaimed crime drama series. During the trial of a mid-level dealer accused of murder, the prosecution&#39;s star witness recants her testimony.</po:medium_synopsis>

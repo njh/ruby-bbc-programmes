@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:rdf      = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs     = "http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl      = "http://www.w3.org/2002/07/owl#"
          xmlns:foaf     = "http://xmlns.com/foaf/0.1/"
          xmlns:po       = "http://purl.org/ontology/po/"
          xmlns:mo       = "http://purl.org/ontology/mo/"
@@ -21,6 +22,7 @@
 
 <po:Series rdf:about="/programmes/b00jnwm0#programme">
 
+  <po:pid>b00jnwm0</po:pid>
   <dc:title>Series 1</dc:title>
   <po:short_synopsis>Critically acclaimed crime drama series telling the story of a single drugs investigation</po:short_synopsis>
   <po:medium_synopsis>Critically acclaimed crime drama series telling the story of a single drugs-and-murder police investigation from the point of view of the police and their targets</po:medium_synopsis>
