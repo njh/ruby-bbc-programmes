@@ -4,6 +4,8 @@ module BBC::Programmes
 
   class Programme < Base
     default_vocabulary RDF::PO
+    type RDF::PO.Programme
+
     property :title, :predicate => DC11.title, :type => String
     property :short_synopsis, :type => String
     property :medium_synopsis, :type => String
@@ -12,11 +14,11 @@ module BBC::Programmes
 
     # FIXME: this should be of type service
     property :masterbrand, :type => RDF::URI
-    
+
     # FIXME: implement this
     #has_many :genres
     #has_many :formats
-    
+
     def self.id_for(identifier)
       if identifier.is_a?(::String)
         super(

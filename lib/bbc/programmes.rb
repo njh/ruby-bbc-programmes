@@ -25,6 +25,8 @@ module BBC
       encoded = Addressable::URI.encode(keywords)
       graph = http_get_graph("#{BASE_URI}/a-z/by/#{encoded}/all.rdf")
 
+      # FIXME: push graph into the repository?
+
       programmes = []
       graph.query([nil, RDF.type, RDF::PO.Programme]) do |s|
         programme = Programme.for(s.subject)
