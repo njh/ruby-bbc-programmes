@@ -20,11 +20,15 @@ describe BBC::Programmes::Version do
     it "should have a name property" do
       @service.name.should == 'England'
     end
-    
+
     it "should have a parent service property" do
       @service.parent.should == BBC::Programmes::Service.for(
         RDF::URI('http://www.bbc.co.uk/services/bbctwo#service')
       )
+    end
+
+    it "should have a to_s method that returns the service name" do
+      @service.to_s.should == 'England'
     end
   end
 end

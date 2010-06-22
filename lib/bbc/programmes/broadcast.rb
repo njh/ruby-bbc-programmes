@@ -14,9 +14,17 @@ module BBC::Programmes
     def start
       time.nil? ? nil : time.start
     end
-    
+
     def end
       time.nil? ? nil : time.end
+    end
+
+    def service
+      broadcast_on
+    end
+
+    def version
+      broadcast_of
     end
   end
 end
