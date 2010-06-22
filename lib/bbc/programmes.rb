@@ -3,6 +3,7 @@
 require 'rdf'
 require 'rdf/raptor'
 require 'rdf/po'
+require 'rdf/timeline'
 require 'net/http'
 require 'addressable/uri'
 require 'spira'
@@ -19,7 +20,9 @@ module BBC
     require 'bbc/programmes/episode'
     require 'bbc/programmes/series'
     require 'bbc/programmes/version'
-    #require 'bbc/programmes/broadcast'
+    require 'bbc/programmes/service'
+    require 'bbc/programmes/broadcast'
+    require 'bbc/programmes/time_interval'
 
     def self.search(keywords)
       encoded = Addressable::URI.encode(keywords)
@@ -97,3 +100,6 @@ BBC_Programmes_Brand = BBC::Programmes::Brand
 BBC_Programmes_Episode = BBC::Programmes::Episode
 BBC_Programmes_Series = BBC::Programmes::Series
 BBC_Programmes_Version = BBC::Programmes::Version
+BBC_Programmes_Service = BBC::Programmes::Service
+BBC_Programmes_Broadcast = BBC::Programmes::Broadcast
+BBC_Programmes_TimeInterval = BBC::Programmes::TimeInterval

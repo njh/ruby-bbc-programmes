@@ -35,6 +35,14 @@ describe BBC::Programmes::Version do
     it "should have a duration of 1 hour" do
       @version.duration.should == 3600
     end
+
+    it "should have 6 broadcasts" do
+      @version.broadcasts.count.should == 6
+    end
+
+    it "should have a broadcast of type Broadcast" do
+      @version.broadcasts.first.class.should == BBC::Programmes::Broadcast
+    end
   end
 
   context "getting a Version from the local repository" do

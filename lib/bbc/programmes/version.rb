@@ -20,6 +20,13 @@ module BBC::Programmes
         super(identifier)
       end
     end
+
+    def broadcasts
+      # FIXME: can this be done using inverse properties?
+      Broadcast.repository.query([nil, RDF::PO.broadcast_of, subject]).map do |b|
+        Broadcast.for(b.subject)
+      end
+    end
   end
 
 end
