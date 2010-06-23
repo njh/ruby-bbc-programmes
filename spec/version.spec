@@ -41,7 +41,35 @@ describe BBC::Programmes::Version do
     end
 
     it "should have a broadcast of type Broadcast" do
-      @version.broadcasts.first.class.should == BBC::Programmes::Broadcast
+      @version.broadcasts.first.should be_a BBC::Programmes::Broadcast
+    end
+
+    it "should have a time interval property" do
+      @version.time.should be_a BBC::Programmes::TimeInterval
+    end
+
+    it "should be on a timeline" do
+      @version.timeline.should be_a BBC::Programmes::TimeLine
+    end
+
+    it "should have multiple intervals" do
+      @version.intervals.should be_an Array
+    end
+
+    it "should have a time interval of type TimeInterval" do
+      @version.intervals.first.should be_a BBC::Programmes::TimeInterval
+    end
+
+    it "should have multiple segments" do
+      @version.segments.should be_an Array
+    end
+
+    it "should have a segment of type Segment" do
+      @version.segments.first.should be_a BBC::Programmes::Segment
+    end
+
+    it "should have a segment with a label" do
+      @version.segments.first.label.should_not be_nil
     end
   end
 
