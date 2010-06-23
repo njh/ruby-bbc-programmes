@@ -53,7 +53,7 @@ describe BBC::Programmes::Series do
     end
 
     it "should have episode of type Episode" do
-      @series.episodes.first.class.should == BBC::Programmes::Episode
+      @series.episodes.first.should be_a BBC::Programmes::Episode
     end
   end
 

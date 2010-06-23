@@ -57,7 +57,7 @@ describe BBC::Programmes::Episode do
     end
 
     it "should have a first version of type Version" do
-      @episode.versions.first.class.should == BBC::Programmes::Version
+      @episode.versions.first.should be_a BBC::Programmes::Version
     end
   end
 

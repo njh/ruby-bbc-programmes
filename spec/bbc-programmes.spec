@@ -14,7 +14,7 @@ describe BBC::Programmes do
     end
 
     it "should return an object of type RDF::Graph" do
-      @graph.class.should == RDF::Graph
+      @graph.should be_a RDF::Graph
     end
 
     it "should return a graph with more than 10 statements" do
@@ -37,7 +37,7 @@ describe BBC::Programmes do
     end
 
     it "should return an array" do
-      @programmes.class.should == Array
+      @programmes.should be_a Array
     end
 
     it "should have three items in the array" do
@@ -45,7 +45,7 @@ describe BBC::Programmes do
     end
 
     it "should have items of type Programme in the array" do
-      @programmes.first.class.should == BBC::Programmes::Programme
+      @programmes.first.should be_a BBC::Programmes::Programme
     end
   end
 

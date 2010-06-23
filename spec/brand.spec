@@ -53,7 +53,7 @@ describe BBC::Programmes::Brand do
     end
 
     it "should have series of type Series" do
-      @brand.series.first.class.should == BBC::Programmes::Series
+      @brand.series.first.should be_a BBC::Programmes::Series
     end
   end
 

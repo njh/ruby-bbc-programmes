@@ -26,5 +26,6 @@ module BBC::Programmes
     def version
       broadcast_of
     end
+
   end
 end

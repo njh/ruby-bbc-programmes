@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + "/spec_helper.rb"
 
-describe BBC::Programmes::Version do
+describe BBC::Programmes::Service do
   before :each do
     @repo = RDF::Repository.new
     Spira.add_repository(:default, @repo)
@@ -17,8 +17,8 @@ describe BBC::Programmes::Version do
       )
     end
 
-    it "should have a name property" do
-      @service.name.should == 'England'
+    it "should have a label property" do
+      @service.label.should == 'England'
     end
 
     it "should have a parent service property" do

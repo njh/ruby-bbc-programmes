@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + "/spec_helper.rb"
 
-describe BBC::Programmes::Version do
+describe BBC::Programmes::Broadcast do
   before :each do
     @repo = RDF::Repository.new
     Spira.add_repository(:default, @repo)
@@ -26,24 +26,24 @@ describe BBC::Programmes::Version do
     end
 
     it "should have a broadcast_of property" do
-      @broadcast.broadcast_of.class.should == BBC::Programmes::Version
+      @broadcast.broadcast_of.should be_a BBC::Programmes::Version
     end
 
     it "should have a 'version' alias property" do
-      @broadcast.version.class.should == BBC::Programmes::Version
+      @broadcast.version.should be_a BBC::Programmes::Version
     end
 
-    it "should have a broadcast_on property with a name" do
-      @broadcast.broadcast_on.class.should == BBC::Programmes::Service
-      @broadcast.broadcast_on.name.should == 'Northern Ireland (Analogue)'
+    it "should have a broadcast_on property with a label" do
+      @broadcast.broadcast_on.should be_a BBC::Programmes::Service
+      @broadcast.broadcast_on.label.should == 'Northern Ireland (Analogue)'
     end
 
-    it "should have a 'service' alias property with a name" do
-      @broadcast.service.class.should == BBC::Programmes::Service
+    it "should have a 'service' alias property" do
+      @broadcast.service.should be_a BBC::Programmes::Service
     end
 
     it "should have a TimeInterval property" do
-      @broadcast.time.class.should == BBC::Programmes::TimeInterval
+      @broadcast.time.should be_a BBC::Programmes::TimeInterval
     end
 
     it "should have an interval start time of 22:20 GMT" do
