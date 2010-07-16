@@ -2,16 +2,16 @@ require 'rubygems'
 require 'yard'
 
 begin
-  gem 'jeweler'
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "bbc-programmes"
     gemspec.summary = "Ruby client library for the BBC Programmes website."
-    gemspec.email = "njh@aelius.com.com"
+    gemspec.email = "njh@aelius.com"
     gemspec.homepage = "http://github.com/njh/bbc-programmes-ruby"
     gemspec.authors = ["Nicholas J Humfrey"]
     gemspec.add_dependency('rdf', '>= 0.2.2')
-    gemspec.add_dependency('nokogiri', '>= 1.3.3')
+    gemspec.add_dependency('rdf-raptor', '>= 0.4.0')
+    gemspec.add_dependency('spira', '>= 0.0.5')
     gemspec.add_development_dependency('rspec')
     gemspec.add_development_dependency('yard')
     gemspec.extra_rdoc_files     = %w(README.md)
